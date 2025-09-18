@@ -1,12 +1,14 @@
-from psycopg2 import connect 
+from psycopg2 import connect
+from environs import Env
+
+
 
 mydb = connect(
-	username = "postgres", 
-	password = "hcnma_$", 
-	host = "localhost", 
-	port = 5432, 
-	database = "fn33_homework" 
+    user="postgres",
+    password="hcnma_$",
+    host="localhost",
+    port=5432,
+    database="fn33_homework",
 )
 
-
-print("succces") 
+print("succces")
