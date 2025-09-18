@@ -1,18 +1,12 @@
 from psycopg2 import connect 
-from environs import Env 
-
-env = Env() 
-env.read_env() 
 
 mydb = connect(
-	user = env.str("DB_USER"),
-	password = env.str("DB_PASSWORD"),
-	dbname = env.str("DB_NAME"),
-	host = env.str("DB_HOST"),
-	port = env.str("DB_PORT")
-
+	username = "postgres", 
+	password = "hcnma_$", 
+	host = "localhost", 
+	port = 5432, 
+	database = "fn33_homework" 
 )
 
 
-
-print("DATABASE connected succesfully")  
+print("succces") 
