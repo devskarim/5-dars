@@ -12,5 +12,6 @@ def query_sql(query,*args , fetchone=False, fetchall=False, commit=False):
 					return dbc.fetchall() 
 			if commit:
 				return True 
-	except:
-		return None 
+	except Exception as e:
+		print("SQL Error:", e)  
+		return None  
