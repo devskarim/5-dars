@@ -1,4 +1,4 @@
-from .connect import get_connect
+from .connection import get_connect
 
 def query_sql(query,*args , fetchone=False, fetchall=False, commit=False):
 	try:
